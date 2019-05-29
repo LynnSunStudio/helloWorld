@@ -1,7 +1,6 @@
 package com.lynnsunstudio.test.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -19,4 +18,10 @@ public class HelloWorldController {
     public String say(){
         return "Hello World ！！！";
     }
+
+    @GetMapping("/sayGoodBye")
+    public String goodBye(){
+        return "GoodBye World ！！！";
+    }
+
 }
